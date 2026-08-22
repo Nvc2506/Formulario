@@ -23,12 +23,12 @@
 
             <div class="group">
                 <label>Nombre</label>
-                <input type="text" name="nombre" required>
+                <input type="text" id="nombre" name="nombre" required>
             </div>
 
             <div class="group">
                 <label>Apellido</label>
-                <input type="text" name="apellido" required>
+                <input type="text" id="apellido" name="apellido" required>
             </div>
 
             <div class="group">
@@ -43,7 +43,7 @@
 
             <div class="group">
                 <label>Número de Identificación</label>
-                <input type="text" name="numero_identificacion" required>
+                <input type="text" id="numero_identificacion"  name="numero_identificacion" required>
             </div>
 
             <div class="group">
@@ -70,16 +70,24 @@
 
             <div class="group">
                 <label>País de domicilio</label>
-                <input type="text"
-                    name="pais"
-                    required>
+                <input type="text" id="pais"  name="pais donde se ubica  required"> 
+                <option selected disabled>Seleccione el pais donde se quiere ubicar</option>
+                  <option value="es"> 724 España</option>
+                  <option value="ca"> 124 Canadá</option>
+                  <option value="mx"> 484 México</option>
+                  <option value="cl"> 152 Chile</option>
+                  <option value="Ar"> 032 argentina</option>
             </div>
 
             <div class="group">
                 <label>Ciudad de domicilio</label>
-                <input type="text"
-                    name="ciudad"
-                    required>
+                <input type="text" id="Ciudad" name="Ciudad donde se ubica required">
+                <option selected disabled>Seleccione la ciudad donde se quiere ubicar</option>
+                     <option value="es">Madrid</option>
+                     <option value="ca">Toronto</option>
+                     <option value="mx">Ciudad  de méxico</option>
+                     <option value="cl">Santiago</option>
+                     <option value="Ar">Buenos Aires</option>
             </div>
 
             <div class="group checkbox">
