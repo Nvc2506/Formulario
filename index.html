@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -25,25 +25,41 @@
 
         <form id="Formulario" action="#">
 
+            <!-- NOMBRE -->
             <div class="group">
-                <label for="nombre">Nombre</label>
+
+                <label for="nombre">
+                    Nombre
+                </label>
 
                 <input type="text"
                     id="nombre"
                     name="nombre"
+                    placeholder="Ingrese su nombre"
                     required>
+
             </div>
 
+
+            <!-- APELLIDO -->
             <div class="group">
-                <label for="apellido">Apellido</label>
+
+                <label for="apellido">
+                    Apellido
+                </label>
 
                 <input type="text"
                     id="apellido"
                     name="apellido"
+                    placeholder="Ingrese su apellido"
                     required>
+
             </div>
 
+
+            <!-- TIPO DE IDENTIFICACIÓN -->
             <div class="group">
+
                 <label for="tipo_identificacion">
                     Tipo de Identificación
                 </label>
@@ -69,9 +85,13 @@
                     </option>
 
                 </select>
+
             </div>
 
+
+            <!-- NÚMERO DE IDENTIFICACIÓN -->
             <div class="group">
+
                 <label for="numero_identificacion">
                     Número de Identificación
                 </label>
@@ -79,10 +99,15 @@
                 <input type="text"
                     id="numero_identificacion"
                     name="numero_identificacion"
+                    placeholder="Ej: 1234567890"
                     required>
+
             </div>
 
+
+            <!-- FECHA DE NACIMIENTO -->
             <div class="group">
+
                 <label for="fecha_nacimiento">
                     Fecha de Nacimiento
                 </label>
@@ -90,10 +115,15 @@
                 <input type="date"
                     id="fecha_nacimiento"
                     name="fecha_nacimiento"
+                    placeholder="Seleccione su fecha de nacimiento"
                     required>
+
             </div>
 
+
+            <!-- CELULAR -->
             <div class="group">
+
                 <label for="celular">
                     Número de Celular
                 </label>
@@ -105,9 +135,13 @@
                     pattern="[0-9]{10}"
                     maxlength="10"
                     required>
+
             </div>
 
+
+            <!-- CORREO -->
             <div class="group">
+
                 <label for="correo">
                     Correo Electrónico
                 </label>
@@ -115,11 +149,15 @@
                 <input type="email"
                     id="correo"
                     name="correo"
-                    placeholder="micorreo@gmail.com"
+                    placeholder="Ej: micorreo@gmail.com"
                     required>
+
             </div>
 
+
+            <!-- PAÍS Y CIUDAD -->
             <div class="group">
+
                 <label for="ciudad">
                     País y ciudad de domicilio
                 </label>
@@ -129,23 +167,51 @@
                     required>
 
                     <option value="" selected disabled>
-                        Seleccione su ciudad...
+                        Seleccione país y ciudad...
                     </option>
 
                     <optgroup label="España">
-                        <option value="Madrid">Madrid</option>
-                        <option value="Barcelona">Barcelona</option>
-                        <option value="Sevilla">Sevilla</option>
-                        <option value="Valencia">Valencia</option>
-                        <option value="Bilbao">Bilbao</option>
+                        <option value="Madrid">
+                            Madrid
+                        </option>
+
+                        <option value="Barcelona">
+                            Barcelona
+                        </option>
+
+                        <option value="Sevilla">
+                            Sevilla
+                        </option>
+
+                        <option value="Valencia">
+                            Valencia
+                        </option>
+
+                        <option value="Bilbao">
+                            Bilbao
+                        </option>
                     </optgroup>
 
                     <optgroup label="Canadá">
-                        <option value="Toronto">Toronto</option>
-                        <option value="Vancouver">Vancouver</option>
-                        <option value="Montreal">Montreal</option>
-                        <option value="Ottawa">Ottawa</option>
-                        <option value="Calgary">Calgary</option>
+                        <option value="Toronto">
+                            Toronto
+                        </option>
+
+                        <option value="Vancouver">
+                            Vancouver
+                        </option>
+
+                        <option value="Montreal">
+                            Montreal
+                        </option>
+
+                        <option value="Ottawa">
+                            Ottawa
+                        </option>
+
+                        <option value="Calgary">
+                            Calgary
+                        </option>
                     </optgroup>
 
                     <optgroup label="México">
@@ -171,8 +237,11 @@
                     </optgroup>
 
                 </select>
+
             </div>
 
+
+            <!-- POLÍTICA DE DATOS -->
             <div class="group checkbox">
 
                 <input type="checkbox"
@@ -186,12 +255,16 @@
 
             </div>
 
+
+            <!-- BOTÓN -->
             <button type="submit" class="btn">
                 Enviar Registro
             </button>
 
         </form>
 
+
+        <!-- FOOTER -->
         <footer class="footer">
 
             <p>
@@ -225,4 +298,4 @@
 </body>
 
 </html>
-```
+
