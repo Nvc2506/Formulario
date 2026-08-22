@@ -9,8 +9,7 @@
 
     <link rel="stylesheet" href="CSS/Sytle.css">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -50,10 +49,7 @@
                     Número de Identificación
                 </label>
 
-                <input type="text"
-                    id="numero_identificacion"
-                    name="numero_identificacion"
-                    required>
+                <input type="text" id="numero_identificacion" name="numero_identificacion" required>
             </div>
 
             <div class="group">
@@ -61,10 +57,7 @@
                     Fecha de Nacimiento
                 </label>
 
-                <input type="date"
-                    id="fecha_nacimiento"
-                    name="fecha_nacimiento"
-                    required>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
             </div>
 
             <div class="group">
@@ -72,12 +65,7 @@
                     Número de Celular
                 </label>
 
-                <input type="tel"
-                    id="celular"
-                    name="celular"
-                    placeholder="Ej: 3004177843"
-                    pattern="[0-9]{10}"
-                    required>
+                <input type="tel" id="celular" name="celular" placeholder="Ej: 3004177843" pattern="[0-9]{10}" required>
             </div>
 
             <div class="group">
@@ -85,54 +73,41 @@
                     Correo Electrónico
                 </label>
 
-                <input type="email"
-                    id="correo"
-                    name="correo"
-                    placeholder="micorreo@gmail.com"
-                    required>
+                <input type="email" id="correo" name="correo" placeholder="micorreo@gmail.com" required>
             </div>
 
-            <div class="group">
-                <label for="pais">
-                    País de domicilio
-                </label>
+            <label for="ciudad">Ciudad de domicilio:</label><br>
 
-                <select id="pais" name="pais" required>
-                    <option value="" selected disabled>
-                        Seleccione el país donde se ubica
-                    </option>
+            <select id="ciudad" name="ciudad">
 
-                    <option value="es">724 - España</option>
-                    <option value="ca">124 - Canadá</option>
-                    <option value="mx">484 - México</option>
-                    <option value="cl">152 - Chile</option>
-                    <option value="ar">032 - Argentina</option>
-                </select>
-            </div>
+                <optgroup label="España">
+                    <option value="28001">Madrid</option>
+                    <option value="08001">Barcelona</option>
+                    <option value="41001">Sevilla</option>
+                    <option value="46001">Valencia</option>
+                    <option value="48001">Bilbao</option>
+                </optgroup>
 
-            <div class="group">
-                <label for="ciudad">
-                    Ciudad de domicilio
-                </label>
+                <optgroup label="Canadá">
+                    <option value="TOR">Toronto</option>
+                    <option value="VAN">Vancouver</option>
+                    <option value="MTL">Montreal</option>
+                    <option value="OTT">Ottawa</option>
+                    <option value="CAL">Calgary</option>
+                </optgroup>
 
-                <select id="ciudad" name="ciudad" required>
-                    <option value="" selected disabled>
-                        Seleccione la ciudad donde se ubica
-                    </option>
+                <optgroup label="México">
+                    <option value="CMX">Ciudad de México</option>
+                    <option value="GDL">Guadalajara</option>
+                    <option value="MTY">Monterrey</option>
+                    <option value="PUE">Puebla</option>
+                    <option value="CUN">Cancún</option>
+                </optgroup>
 
-                    <option value="madrid">Madrid</option>
-                    <option value="toronto">Toronto</option>
-                    <option value="mexico">Ciudad de México</option>
-                    <option value="santiago">Santiago</option>
-                    <option value="buenos_aires">Buenos Aires</option>
-                </select>
-            </div>
+            </select>
 
             <div class="group checkbox">
-                <input type="checkbox"
-                    id="politica"
-                    name="politica"
-                    required>
+                <input type="checkbox" id="politica" name="politica" required>
 
                 <label for="politica">
                     Acepto la política de tratamiento de datos.
