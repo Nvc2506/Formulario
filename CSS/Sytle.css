@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -17,17 +18,18 @@ body {
 .card {
     width: 100%;
     max-width: 500px;
-    background: white;
+    background: #ffffff;
     padding: 35px;
     border-radius: 20px;
     border: 2px solid #eb99b1;
     box-shadow: 0 20px 40px rgba(255, 157, 187, 0.3);
 }
 
-h2 {
+.card h2 {
     text-align: center;
     color: #ff6fa7;
     margin-bottom: 25px;
+    font-size: 26px;
 }
 
 .group {
@@ -45,17 +47,18 @@ h2 {
 .group select {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ffb3cc;
     border-radius: 10px;
+    border: 1px solid #ffb3cc;
     background: #fff5f8;
+    outline: none;
     font-size: 14px;
 }
 
 .group input:focus,
 .group select:focus {
-    outline: none;
-    border: 2px solid #ff6fa7;
-    background: white;
+    border-color: #ff6fa7;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(255, 111, 167, 0.2);
 }
 
 .checkbox {
@@ -67,12 +70,15 @@ h2 {
 .checkbox input {
     width: 18px;
     height: 18px;
+    accent-color: #ff6fa7;
+    cursor: pointer;
 }
 
 .checkbox label {
     margin: 0;
-    color: #555;
+    color: #555555;
     font-weight: normal;
+    cursor: pointer;
 }
 
 .btn {
@@ -81,22 +87,23 @@ h2 {
     border: none;
     border-radius: 12px;
     background: linear-gradient(135deg, #ff6fa7, #ff9dbb);
-    color: white;
+    color: #ffffff;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    opacity: 0.85;
     transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(255, 111, 167, 0.4);
 }
 
 .footer {
     margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #ffe0eb;
     text-align: center;
+    border-top: 1px solid #ffe0eb;
+    padding-top: 20px;
 }
 
 .footer p {
@@ -104,8 +111,8 @@ h2 {
 }
 
 .footer-small {
+    color: #777777 !important;
     font-size: 13px;
-    color: #777 !important;
     margin-top: 5px;
 }
 
@@ -113,8 +120,8 @@ h2 {
     margin-top: 15px;
     display: flex;
     justify-content: center;
-    gap: 10px;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .footer-nav a {
@@ -124,17 +131,27 @@ h2 {
     border: 1px solid #ffb3cc;
     padding: 8px 14px;
     border-radius: 20px;
+    transition: 0.3s;
+    font-size: 13px;
 }
 
 .footer-nav a:hover {
-    background: #ff6fa7;
-    color: white;
+    background: linear-gradient(135deg, #ff6fa7, #ff9dbb);
+    color: #ffffff;
 }
 
 @media (max-width: 480px) {
 
+    body {
+        padding: 10px;
+    }
+
     .card {
         padding: 25px 20px;
+    }
+
+    .card h2 {
+        font-size: 22px;
     }
 
     .footer-nav {
@@ -143,5 +160,7 @@ h2 {
 
     .footer-nav a {
         width: 100%;
+        text-align: center;
     }
 }
+
