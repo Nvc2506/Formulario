@@ -76,35 +76,33 @@
                 <input type="email" id="correo" name="correo" placeholder="micorreo@gmail.com" required>
             </div>
 
-            <label for="ciudad">Ciudad de domicilio:</label><br>
+            <div class="group"><select id="ciudad" name="ciudad">
+                    
+                    <label for="PAISES"></label>
+                    <optgroup label="España">
+                        <option value="28001">Madrid</option>
+                        <option value="08001">Barcelona</option>
+                        <option value="41001">Sevilla</option>
+                        <option value="46001">Valencia</option>
+                        <option value="48001">Bilbao</option>
+                    </optgroup>
 
-            <select id="ciudad" name="ciudad">
+                    <optgroup label="Canadá">
+                        <option value="TOR">Toronto</option>
+                        <option value="VAN">Vancouver</option>
+                        <option value="MTL">Montreal</option>
+                        <option value="OTT">Ottawa</option>
+                        <option value="CAL">Calgary</option>
+                    </optgroup>
 
-                <optgroup label="España">
-                    <option value="28001">Madrid</option>
-                    <option value="08001">Barcelona</option>
-                    <option value="41001">Sevilla</option>
-                    <option value="46001">Valencia</option>
-                    <option value="48001">Bilbao</option>
-                </optgroup>
-
-                <optgroup label="Canadá">
-                    <option value="TOR">Toronto</option>
-                    <option value="VAN">Vancouver</option>
-                    <option value="MTL">Montreal</option>
-                    <option value="OTT">Ottawa</option>
-                    <option value="CAL">Calgary</option>
-                </optgroup>
-
-                <optgroup label="México">
-                    <option value="CMX">Ciudad de México</option>
-                    <option value="GDL">Guadalajara</option>
-                    <option value="MTY">Monterrey</option>
-                    <option value="PUE">Puebla</option>
-                    <option value="CUN">Cancún</option>
-                </optgroup>
-
-            </select>
+                    <optgroup label="México">
+                        <option value="CMX">Ciudad de México</option>
+                        <option value="GDL">Guadalajara</option>
+                        <option value="MTY">Monterrey</option>
+                        <option value="PUE">Puebla</option>
+                        <option value="CUN">Cancún</option>
+                    </optgroup>
+            </div>
 
             <div class="group checkbox">
                 <input type="checkbox" id="politica" name="politica" required>
