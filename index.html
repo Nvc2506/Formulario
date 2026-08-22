@@ -21,7 +21,7 @@
             <i class="fa-solid fa-user"></i> Formulario
         </h2>
 
-        <form>
+        <form id="Formulario" action="#">
 
             <div class="group">
                 <label for="nombre">Nombre</label>
@@ -56,9 +56,10 @@
             </div>
 
             <div class="group">
-                <label for="numero_identificacion">
-                    Número de Identificación
-                </label>
+                <option value="" selected disabled>
+                       Número de Identificación
+                    </option>
+               
 
                 <input type="text"
                     id="numero_identificacion"
@@ -67,10 +68,11 @@
             </div>
 
             <div class="group">
+                
                 <label for="fecha_nacimiento">
                     Fecha de Nacimiento
                 </label>
-
+                
                 <input type="date"
                     id="fecha_nacimiento"
                     name="fecha_nacimiento"
@@ -78,6 +80,7 @@
             </div>
 
             <div class="group">
+                
                 <label for="celular">
                     Número de Celular
                 </label>
@@ -91,6 +94,7 @@
             </div>
 
             <div class="group">
+                 
                 <label for="correo">
                     Correo Electrónico
                 </label>
@@ -103,7 +107,7 @@
             </div>
 
 
-            <!-- PAÍS Y CIUDAD -->
+           
 
             <div class="group">
 
@@ -113,10 +117,7 @@
 
                 <select id="ciudad" name="ciudad" required>
 
-                    <option value="" selected disabled>
-                        Seleccione el país y la ciudad...
-                    </option>
-
+                    
                     <optgroup label="España">
                         <option value="28001">Madrid</option>
                         <option value="08001">Barcelona</option>
@@ -153,6 +154,7 @@
                 <input type="checkbox"
                     id="politica"
                     name="politica"
+                    placeholder="Ej"
                     required>
 
                 <label for="politica">
