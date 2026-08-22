@@ -17,24 +17,28 @@
 
     <div class="card">
 
-        <h2><i class="fa-solid fa-user"></i> Formulario</h2>
+        <h2>
+            <i class="fa-solid fa-user"></i> Formulario
+        </h2>
 
         <form>
 
             <div class="group">
-                <label>Nombre</label>
+                <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre" required>
             </div>
 
             <div class="group">
-                <label>Apellido</label>
+                <label for="apellido">Apellido</label>
                 <input type="text" id="apellido" name="apellido" required>
             </div>
 
             <div class="group">
-                <label>Tipo de Identificación</label>
-                <select name="tipo_identificacion">
-                    <option selected disabled>Seleccione el tipo de documento...</option>
+                <label for="tipo_identificacion">Tipo de Identificación</label>
+                <select id="tipo_identificacion" name="tipo_identificacion" required>
+                    <option value="" selected disabled>
+                        Seleccione el tipo de documento...
+                    </option>
                     <option value="CC">Cédula de Ciudadanía (CC)</option>
                     <option value="TI">Tarjeta de Identidad (TI)</option>
                     <option value="PA">Pasaporte (PA)</option>
@@ -42,18 +46,34 @@
             </div>
 
             <div class="group">
-                <label>Número de Identificación</label>
-                <input type="text" id="numero_identificacion"  name="numero_identificacion" required>
+                <label for="numero_identificacion">
+                    Número de Identificación
+                </label>
+
+                <input type="text"
+                    id="numero_identificacion"
+                    name="numero_identificacion"
+                    required>
             </div>
 
             <div class="group">
-                <label>Fecha de Nacimiento</label>
-                <input type="date" name="fecha_nacimiento">
+                <label for="fecha_nacimiento">
+                    Fecha de Nacimiento
+                </label>
+
+                <input type="date"
+                    id="fecha_nacimiento"
+                    name="fecha_nacimiento"
+                    required>
             </div>
 
             <div class="group">
-                <label>Número de Celular</label>
+                <label for="celular">
+                    Número de Celular
+                </label>
+
                 <input type="tel"
+                    id="celular"
                     name="celular"
                     placeholder="Ej: 3004177843"
                     pattern="[0-9]{10}"
@@ -61,43 +81,67 @@
             </div>
 
             <div class="group">
-                <label>Correo Electrónico</label>
+                <label for="correo">
+                    Correo Electrónico
+                </label>
+
                 <input type="email"
+                    id="correo"
                     name="correo"
                     placeholder="micorreo@gmail.com"
                     required>
             </div>
 
             <div class="group">
-                <label>País de domicilio</label>
-                <input type="text" id="pais"  name="pais donde se ubica  required"> 
-                <option selected disabled>Seleccione el pais donde se quiere ubicar</option>
-                  <option value="es"> 724 España</option>
-                  <option value="ca"> 124 Canadá</option>
-                  <option value="mx"> 484 México</option>
-                  <option value="cl"> 152 Chile</option>
-                  <option value="Ar"> 032 argentina</option>
+                <label for="pais">
+                    País de domicilio
+                </label>
+
+                <select id="pais" name="pais" required>
+                    <option value="" selected disabled>
+                        Seleccione el país donde se ubica
+                    </option>
+
+                    <option value="es">724 - España</option>
+                    <option value="ca">124 - Canadá</option>
+                    <option value="mx">484 - México</option>
+                    <option value="cl">152 - Chile</option>
+                    <option value="ar">032 - Argentina</option>
+                </select>
             </div>
 
             <div class="group">
-                <label>Ciudad de domicilio</label>
-                <input type="text" id="Ciudad" name="Ciudad donde se ubica required">
-                <option selected disabled>Seleccione la ciudad donde se quiere ubicar</option>
-                     <option value="es">Madrid</option>
-                     <option value="ca">Toronto</option>
-                     <option value="mx">Ciudad  de méxico</option>
-                     <option value="cl">Santiago</option>
-                     <option value="Ar">Buenos Aires</option>
+                <label for="ciudad">
+                    Ciudad de domicilio
+                </label>
+
+                <select id="ciudad" name="ciudad" required>
+                    <option value="" selected disabled>
+                        Seleccione la ciudad donde se ubica
+                    </option>
+
+                    <option value="madrid">Madrid</option>
+                    <option value="toronto">Toronto</option>
+                    <option value="mexico">Ciudad de México</option>
+                    <option value="santiago">Santiago</option>
+                    <option value="buenos_aires">Buenos Aires</option>
+                </select>
             </div>
 
             <div class="group checkbox">
-                <input type="checkbox" required>
-                <label>Acepto la política de tratamiento de datos.</label>
+                <input type="checkbox"
+                    id="politica"
+                    name="politica"
+                    required>
+
+                <label for="politica">
+                    Acepto la política de tratamiento de datos.
+                </label>
             </div>
 
             <button class="btn" type="submit">
                 <i class="fa-solid fa-paper-plane"></i>
-                Enviar 
+                Enviar
             </button>
 
         </form>
@@ -111,9 +155,17 @@
             </p>
 
             <nav class="footer-nav">
-                <a href="privacidad.html">Política de Privacidad</a>
-                <a href="terminos.html">Términos de Servicio</a>
-                <a href="contacto.html">Contacto</a>
+                <a href="privacidad.html">
+                    Política de Privacidad
+                </a>
+
+                <a href="terminos.html">
+                    Términos de Servicio
+                </a>
+
+                <a href="contacto.html">
+                    Contacto
+                </a>
             </nav>
 
         </footer>
